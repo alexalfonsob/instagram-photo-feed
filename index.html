@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="row justify-content-around">
+            <div class="col-1">
+                <a class="navbar-brand" href="#">
+                    <img src="https://image.flaticon.com/icons/svg/1077/1077042.svg" width="30" height="30" class="d-inline-block align-top" alt="">Instagram</a>
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <img src="https://image.flaticon.com/icons/svg/3/3901.svg" width="35" height="35" class="d-inline-block align-top border rounded p-1" alt="">
+                                <img src="https://image.flaticon.com/icons/svg/34/34250.svg" width="35" height="35" class="d-inline-block align-top border rounded p-1" alt="">
+
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary bg-light text-dark" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary bg-success">Publish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-around right-nav">
+            <div class="col-8">
+                <div class="bg-light">
+                    <button type="button" class="btn btn-primary border bg-success" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Create a new post</button></div>
+            </div>
+            <div class="col-4">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle bg-light border-0 bg-light" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img style="width: 30px; height: 30px;" src="https://image.flaticon.com/icons/svg/70/70367.svg"></img></button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">Action</button>
+                        <button class="dropdown-item" type="button">Another action</button>
+                        <button class="dropdown-item" type="button">Something else here</button>
+                        <div class="dropdown-divider"></div>
+                        <button class="dropdown-item" type="button">Log Out</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel('pause')">
+
+        <div class="container pt-3">
+            <div class="row">
+                <div class="col align-self-center">
+                    <nav>
+                        <ul class="pagination justify-content-center ">
+                            <li class="page-item" data-target="#carouselExampleIndicators" data-slide-to="0"><a class="page-link" href="carouselExampleSlidesOnly"><img style="width: 15px; height: 15px;" src="https://image.flaticon.com/icons/svg/566/566001.svg"></img></a></li>
+                            <li class="page-item " data-target="#carouselExampleIndicators" data-slide-to="1"><a class="page-link" href="#"><img style="width: 10px; height: 10px;" src="img/cuadrado.png"></img></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+                <div class="card-columns">
+                    <div class="card">
+                        <img src="http://lorempixel.com/400/200" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card">
+                        <img src="http://lorempixel.com/400/200/sports" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card">
+                        <img src="http://lorempixel.com/400/200" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card">
+                        <img src="http://lorempixel.com/400/200/sports" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card">
+                        <img src="http://lorempixel.com/400/200/sports" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card">
+                        <img src="http://lorempixel.com/400/200" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card">
+                        <img src="http://lorempixel.com/400/200/sports" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card">
+                        <img src="http://lorempixel.com/400/200" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card">
+                        <img src="http://lorempixel.com/400/200/sports" class="card-img-top" alt="...">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="carousel-item  bg-light">
+
+                <div class="card mx-auto  mt-4" style="width: 40rem;">
+                    <div class="card-body">
+
+                        <div class="row justify-content-start">
+                            <div class="col-11">
+                                <h1 class="card-title font-weight-bold" style="font-size: 1.5rem;">My first photo</h1>
+                            </div>
+                            <div class="row justify-content-end ">
+                                <p small class="text-muted content-header" style="font-size: 1.5em;">12/14</p>
+                            </div>
+                        </div>
+
+
+
+                        <img src="http://lorempixel.com/400/200" class="card-img-top">
+                        <span class="text-muted font-weight-bold">23 Like</span>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="input-group flex-nowrap">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-transparent border-0" id="addon-wrapping"><img  style="width: 30px; height: 30px;" src="https://image.flaticon.com/icons/svg/126/126471.svg"></img></span>
+                                    </div>
+                                    <input type="text" class="form-control border-0" placeholder="Comment..." aria-label="comment" aria-describedby="addon-wrapping">
+
+                                    <div class="row justify-content-between">
+                                        <div class="col-4">
+                                            <span class="bg-light border-0" id="addon-wrapping"><img  style="width: 10px; height: 30px;" src="img/sandw.png"></img></span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="card mx-auto  mt-4" style="width: 40rem;">
+                    <div class="card-body">
+
+                        <div class="row justify-content-start">
+                            <div class="col-11">
+                                <h1 class="card-title font-weight-bold" style="font-size: 1.5rem;">My first photo</h1>
+                            </div>
+                            <div class="row justify-content-end ">
+                                <p small class="text-muted content-header" style="font-size: 1.5em;">12/14</p>
+                            </div>
+                        </div>
+
+
+
+                        <img src="http://lorempixel.com/400/200" class="card-img-top">
+                        <span class="text-muted font-weight-bold">23 Like</span>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="input-group flex-nowrap">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-transparent border-0" id="addon-wrapping"><img  style="width: 30px; height: 30px;" src="https://image.flaticon.com/icons/svg/126/126471.svg"></img></span>
+                                    </div>
+                                    <input type="text" class="form-control border-0" placeholder="Comment..." aria-label="comment" aria-describedby="addon-wrapping">
+
+                                    <div class="row justify-content-between">
+                                        <div class="col-4">
+                                            <span class="bg-light border-0" id="addon-wrapping"><img  style="width: 10px; height: 30px;" src="img/sandw.png"></img></span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="card mx-auto  mt-4" style="width: 40rem;">
+                    <div class="card-body">
+
+                        <div class="row justify-content-start">
+                            <div class="col-11">
+                                <h1 class="card-title font-weight-bold" style="font-size: 1.5rem;">My first photo</h1>
+                            </div>
+                            <div class="row justify-content-end ">
+                                <p small class="text-muted content-header" style="font-size: 1.5em;">12/14</p>
+                            </div>
+                        </div>
+
+
+
+                        <img src="http://lorempixel.com/400/200" class="card-img-top">
+                        <span class="text-muted font-weight-bold">23 Like</span>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="input-group flex-nowrap">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-transparent border-0" id="addon-wrapping"><img  style="width: 30px; height: 30px;" src="https://image.flaticon.com/icons/svg/126/126471.svg"></img></span>
+                                    </div>
+                                    <input type="text" class="form-control border-0" placeholder="Comment..." aria-label="comment" aria-describedby="addon-wrapping">
+
+                                    <div class="row justify-content-between">
+                                        <div class="col-4">
+                                            <span class="bg-light border-0" id="addon-wrapping"><img  style="width: 10px; height: 30px;" src="img/sandw.png"></img></span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="card mx-auto  mt-4" style="width: 40rem;">
+                    <div class="card-body">
+
+                        <div class="row justify-content-start">
+                            <div class="col-11">
+                                <h1 class="card-title font-weight-bold" style="font-size: 1.5rem;">My first photo</h1>
+                            </div>
+                            <div class="row justify-content-end ">
+                                <p small class="text-muted content-header" style="font-size: 1.5em;">12/14</p>
+                            </div>
+                        </div>
+
+
+
+                        <img src="http://lorempixel.com/400/200" class="card-img-top">
+                        <span class="text-muted font-weight-bold">23 Like</span>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="input-group flex-nowrap">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-transparent border-0" id="addon-wrapping"><img  style="width: 30px; height: 30px;" src="https://image.flaticon.com/icons/svg/126/126471.svg"></img></span>
+                                    </div>
+                                    <input type="text" class="form-control border-0" placeholder="Comment..." aria-label="comment" aria-describedby="addon-wrapping">
+
+                                    <div class="row justify-content-between">
+                                        <div class="col-4">
+                                            <span class="bg-light border-0" id="addon-wrapping"><img  style="width: 10px; height: 30px;" src="img/sandw.png"></img></span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="card mx-auto  mt-4" style="width: 40rem;">
+                    <div class="card-body">
+
+                        <div class="row justify-content-start">
+                            <div class="col-11">
+                                <h1 class="card-title font-weight-bold" style="font-size: 1.5rem;">My first photo</h1>
+                            </div>
+                            <div class="row justify-content-end ">
+                                <p small class="text-muted content-header" style="font-size: 1.5em;">12/14</p>
+                            </div>
+                        </div>
+
+
+
+                        <img src="http://lorempixel.com/400/200" class="card-img-top">
+                        <span class="text-muted font-weight-bold">23 Like</span>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="input-group flex-nowrap">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-transparent border-0" id="addon-wrapping"><img  style="width: 30px; height: 30px;" src="https://image.flaticon.com/icons/svg/126/126471.svg"></img></span>
+                                    </div>
+                                    <input type="text" class="form-control border-0" placeholder="Comment..." aria-label="comment" aria-describedby="addon-wrapping">
+
+                                    <div class="row justify-content-between">
+                                        <div class="col-4">
+                                            <span class="bg-light border-0" id="addon-wrapping"><img  style="width: 10px; height: 30px;" src="img/sandw.png"></img></span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
